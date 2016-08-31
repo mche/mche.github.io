@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -15,13 +15,13 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/kbroman.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Google Icon Font-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
     <!-- Le fav and touch icons -->
-    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/me.ico"/>
+    <link rel="shortcut icon" href="{{ BASE_PATH }}/assets/favicon.ico"/>
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -30,19 +30,21 @@
   </head>
 
   <body>
+    <header>
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
-              <li><a href="{{ BASE_PATH }}/pages/about.html">about</a></li>
+              <li><a href="{{ BASE_PATH }}/pages/about.html">Контакты</a></li>
 
           </ul>
         </div>
       </div>
     </div>
+    </header>
 
-    <div class="container-narrow">
+    <main>
 
       <div class="content">
         {{ content }}
@@ -50,8 +52,14 @@
 
       <hr>
 
-    </div>
+    </main>
 
-    {% include JB/analytics %}
+    <footer>
+      
+    </footer>
+    
+    <script  src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js" integrity="sha256-YUCh5+Y7KLYFkfuGkmKTo2Bsm2+RHjbG7aefaPF/cBg=" crossorigin="anonymous"></script>
+    
   </body>
 </html>
