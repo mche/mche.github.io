@@ -31,17 +31,18 @@
 
   <body>
     <header>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-              <li><a href="{{ BASE_PATH }}/pages/about.html">Контакты</a></li>
-
+    
+      <nav>
+        <div class="nav-wrapper">
+          <a href="{{ HOME_PATH }" class="brand-logo">{{ site.title }}</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{{ BASE_PATH }}/pages/a.html">Один</a></li>
+            <li><a href="{{ BASE_PATH }}/pages/b.html">Два</a></li>
+            <li><a href="{{ BASE_PATH }}/pages/c.html">Три</a></li>
           </ul>
         </div>
-      </div>
-    </div>
+      </nav>
+      
     </header>
 
     <main>
