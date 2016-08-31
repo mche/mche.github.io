@@ -5,13 +5,13 @@ description: Описание
 keywords: ключевые слова
 ---
 
-<div class="navbar">
+<!--div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
           <li><a href="{{ BASE_PATH }}/assets/123">123</a></li>
       </ul>
   </div>
-</div>
+</div -->
 
 
 
